@@ -14,7 +14,7 @@ local Speed = Instance.new(“NumberValue”) –In case the player dies, save t
 
 Speed.Name = “SpeedValue”
 
-Speed.Value = 16
+Speed.Value = 20
 
 Speed.Parent = player
 
