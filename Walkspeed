@@ -1,10 +1,4 @@
-local player
-local character
-local humanoid
-local speed
-player=game.Players.LocalPlayer
-character=player.Character
-humanoid=character.Humanoid
-speed=15
-substractspeed=5
-humanoid.WalkSpeed=(15-5)*10
+local Plr = game.Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+
+Char:WaitForChild("Humanoid").WalkSpeed = 0
