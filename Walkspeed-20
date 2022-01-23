@@ -1,4 +1,10 @@
-local Plr = game.Players.LocalPlayer
-local Char = Plr.Character or Plr.CharacterAdded:Wait()
-
-Char:WaitForChild("Humanoid").WalkSpeed = 0
+local Player = game.Players.LocalPlayer
+if Player ~= nil then
+	local Character = Player.Character or Player.CharacterAdded:Wait()
+	if Character ~= nil then
+		local Humanoid = Character:WaitForChild("Humanoid")
+		if Humanoid ~= nil then
+			Humanoid.WalkSpeed = 20
+		end
+	end
+end
